@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShiftCipher
 {
@@ -12,13 +7,13 @@ namespace ShiftCipher
         public string Code;
         public int key;
 
-        public Dk(){}
+        public Dk() { }
 
-        public void DkMethod() 
+        public void DkMethod()
         {
             char[] Alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
 
-            string code =Code;
+            string code = Code;
             int length = code.Length;
 
             int[] NumberOfLetters = new int[length];
@@ -43,7 +38,7 @@ namespace ShiftCipher
             for (int i = 0; i < length; i++)
             {
                 NumberOfLetters[i] -= key;
-                if (NumberOfLetters[i] <0)
+                if (NumberOfLetters[i] < 0)
                 {
                     NumberOfLetters[i] += 26;
                 }
