@@ -1,0 +1,7 @@
+F:\Practice\C#\ShiftCipher\bin\Debug\ShiftCipher.exe.config
+F:\Practice\C#\ShiftCipher\bin\Debug\ShiftCipher.exe
+F:\Practice\C#\ShiftCipher\bin\Debug\ShiftCipher.pdb
+F:\Practice\C#\ShiftCipher\obj\Debug\ShiftCipher.csprojAssemblyReference.cache
+F:\Practice\C#\ShiftCipher\obj\Debug\ShiftCipher.csproj.CoreCompileInputs.cache
+F:\Practice\C#\ShiftCipher\obj\Debug\ShiftCipher.exe
+F:\Practice\C#\ShiftCipher\obj\Debug\ShiftCipher.pdb
