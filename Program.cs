@@ -6,47 +6,55 @@ namespace ShiftCipher
     {
         private static void Main(string[] args)
         {
-
-            Console.WriteLine("Select the desired option: \n1.Ek\n2.Dk");
-            int Select = Convert.ToInt32(Console.ReadLine());
-
-            switch (Select)
+            int Continue = 0;
+            do //حلقه تکرار برنامه
             {
-                case 1:
+                Console.WriteLine("Select the desired option: \n1.Ek\n2.Dk");
+                int Select = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine("enter your text: ");
-                    string p0 = Console.ReadLine();
-                    string p = p0.ToLower();
-                    Console.WriteLine("enter your key: ");
-                    int Key = Convert.ToInt32(Console.ReadLine());
+                switch (Select)
+                {
+                    case 1:
 
-                    Ek ek = new Ek
-                    {
-                        key = Key,
-                        p = p
-                    };
-                    ek.EkMethod();
+                        Console.WriteLine("enter your text: ");
+                        string p0 = Console.ReadLine();
+                        string p = p0.ToLower();
+                        Console.WriteLine("enter your key: ");
+                        int Key = Convert.ToInt32(Console.ReadLine());
 
-                    break;
+                        Ek ek = new Ek
+                        {
+                            key = Key,
+                            p = p
+                        };
+                        ek.EkMethod();
 
-                case 2:
+                        break;
 
-                    Console.WriteLine("enter your text: ");
-                    string c0 = Console.ReadLine();
-                    string c = c0.ToLower();
-                    Console.WriteLine("enter your key: ");
-                    int key = Convert.ToInt32(Console.ReadLine());
+                    case 2:
 
-                    Dk dk = new Dk
-                    {
-                        Code = c,
-                        key = key
-                    };
-                    dk.DkMethod();
+                        Console.WriteLine("enter your text: ");
+                        string c0 = Console.ReadLine();
+                        string c = c0.ToLower();
+                        Console.WriteLine("enter your key: ");
+                        int key = Convert.ToInt32(Console.ReadLine());
 
-                    break;
+                        Dk dk = new Dk
+                        {
+                            Code = c,
+                            key = key
+                        };
+                        dk.DkMethod();
 
-            }
+                        break;
+
+                }
+
+                Console.WriteLine();
+                Console.WriteLine("Do you want to continue?\n1.Yes\n2.No");
+                Continue = Convert.ToInt32(Console.ReadLine());
+
+            } while (Continue==1);
 
 
         }
