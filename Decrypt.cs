@@ -2,12 +2,12 @@
 
 namespace ShiftCipher
 {
-    public class Dk
+    public class Decrypt
     {
         public string Code;
         public int key;
 
-        public Dk() { }
+        public Decrypt() { }
 
         public void DkMethod()
         {
@@ -19,11 +19,11 @@ namespace ShiftCipher
             int[] NumberOfLetters = new int[length];
             char[] text = new char[length];
 
-            // پیدا کردن شماره های کل متن
+            // Find whole text numbers
             for (int i = 0; i < length; i++)
             {
                 char temp = code[i];
-                // پیدا کردن شماره هر حرف
+                // Find the number of each letter
                 for (int j = 0; j < 26; j++)
                 {   //Alphabet[j] == temp
                     if (temp.Equals(Alphabet[j]))
@@ -34,7 +34,7 @@ namespace ShiftCipher
                 }
             }
 
-            //تبدیل اعداد
+            //Convert numbers
             for (int i = 0; i < length; i++)
             {
                 NumberOfLetters[i] -= key;
@@ -44,13 +44,13 @@ namespace ShiftCipher
                 }
             }
 
-            //تبدیل عدد به حرف
+            //Convert numbers to letters
             for (int i = 0; i < length; i++)
             {
                 text[i] = Alphabet[NumberOfLetters[i]];
             }
 
-            //چاپ متن رمز شده
+            //Print decrypted text
             Console.WriteLine("your code is: ");
             for (int i = 0; i < length; i++)
             {

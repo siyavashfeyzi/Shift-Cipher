@@ -7,9 +7,10 @@ namespace ShiftCipher
         private static void Main(string[] args)
         {
             int Continue = 0;
-            do //حلقه تکرار برنامه
+            //Repeat program loop
+            do
             {
-                Console.WriteLine("Select the desired option: \n1.Ek\n2.Dk");
+                Console.WriteLine("Select the desired option: \n1.Encrypt\n2.Decrypt");
                 int Select = Convert.ToInt32(Console.ReadLine());
 
                 switch (Select)
@@ -22,7 +23,7 @@ namespace ShiftCipher
                         Console.WriteLine("enter your key: ");
                         int Key = Convert.ToInt32(Console.ReadLine());
 
-                        Ek ek = new Ek
+                        Encrypt ek = new Encrypt
                         {
                             key = Key,
                             p = p
@@ -39,7 +40,7 @@ namespace ShiftCipher
                         Console.WriteLine("enter your key: ");
                         int key = Convert.ToInt32(Console.ReadLine());
 
-                        Dk dk = new Dk
+                        Decrypt dk = new Decrypt
                         {
                             Code = c,
                             key = key
