@@ -5,3 +5,10 @@ F:\Practice\C#\ShiftCipher\obj\Debug\ShiftCipher.csprojAssemblyReference.cache
 F:\Practice\C#\ShiftCipher\obj\Debug\ShiftCipher.csproj.CoreCompileInputs.cache
 F:\Practice\C#\ShiftCipher\obj\Debug\ShiftCipher.exe
 F:\Practice\C#\ShiftCipher\obj\Debug\ShiftCipher.pdb
+C:\Users\ASUS.PIESC\My Project\Shift-Cipher\bin\Debug\ShiftCipher.exe.config
+C:\Users\ASUS.PIESC\My Project\Shift-Cipher\bin\Debug\ShiftCipher.exe
+C:\Users\ASUS.PIESC\My Project\Shift-Cipher\bin\Debug\ShiftCipher.pdb
+C:\Users\ASUS.PIESC\My Project\Shift-Cipher\obj\Debug\ShiftCipher.csproj.AssemblyReference.cache
+C:\Users\ASUS.PIESC\My Project\Shift-Cipher\obj\Debug\ShiftCipher.csproj.CoreCompileInputs.cache
+C:\Users\ASUS.PIESC\My Project\Shift-Cipher\obj\Debug\ShiftCipher.exe
+C:\Users\ASUS.PIESC\My Project\Shift-Cipher\obj\Debug\ShiftCipher.pdb
